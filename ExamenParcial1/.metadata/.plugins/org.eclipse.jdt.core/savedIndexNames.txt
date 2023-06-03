@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\ESPE\Documents\javaprojects\ExamenParcial1\.metadata\.plugins\org.eclipse.jdt.core
+3268552243.index
+1865797976.index
+2641861327.index

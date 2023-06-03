@@ -1,0 +1,59 @@
+package Evaluacion1;
+import java.util.Scanner;
+public class Pedido {
+	Scanner sc= new Scanner(System.in);
+		private String [] Producto;
+		private String [] Proveedor;
+		private float [] precioUnitario;
+		private int [] unidades;
+		int op;
+		
+		public void ingresoNumeros() {
+			 System.out.print("Ingrese la cantidad Productos que desea registrar: ");
+			 op = sc.nextInt();
+			 Producto = new String[op];
+			 Proveedor = new String[op];
+			 precioUnitario = new float[op];
+			 unidades = new int[op];
+			 
+			 for (int i = 0; i < op; i++) {
+				 sc.nextLine();
+			 System.out.print("Ingrese el nombre del producto "+(i+1)+":");
+			 Producto[i] = sc.nextLine();
+			 System.out.print("Ingrese el proveedor del producto "+(i+1)+":");
+			 Proveedor[i] = sc.nextLine();
+			 System.out.print("Ingrese la cantidad del producto "+(i+1)+":");
+			 unidades[i] = sc.nextInt();
+			 System.out.print("Ingrese el precio unitario del producto "+(i+1)+":");
+			 precioUnitario[i] = sc.nextFloat();
+			 
+			 }
+			 System.out.println("Productos registrados exitosamente.");
+			 }
+		public String[] getProducto() {
+			return Producto;
+		}
+		public void setProducto(String[] producto) {
+			Producto = producto;
+		}
+		public String[] getProveedor() {
+			return Proveedor;
+		}
+		public void setProveedor(String[] proveedor) {
+			Proveedor = proveedor;
+		}
+		
+		public float[] getPrecioUnitario() {
+			return precioUnitario;
+		}
+		public void setPrecioUnitario(float[] precioUnitario) {
+			this.precioUnitario = precioUnitario;
+		}
+		public int[] getUnidades() {
+			return unidades;
+		}
+		public void setUnidades(int[] unidades) {
+			this.unidades = unidades;
+		}
+
+}
